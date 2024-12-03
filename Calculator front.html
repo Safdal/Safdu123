@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colorful Dressing Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dressing Calculator</h1>
+    <form id="calculator">
+      <label for="shirts">Shirts ($20 each):</label>
+      <input type="number" id="shirts" value="0" min="0"><br>
+
+      <label for="pants">Pants ($30 each):</label>
+      <input type="number" id="pants" value="0" min="0"><br>
+
+      <label for="shoes">Shoes ($50 each):</label>
+      <input type="number" id="shoes" value="0" min="0"><br>
+
+      <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <h2 id="total">Total: $0</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
